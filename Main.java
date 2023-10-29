@@ -4,19 +4,19 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        List<CambiarPedro> lista = new ArrayList<CambiarPedro>();
-        lista.add(new CambiarPedro("Marcela"));
-        lista.add(new CambiarPedro("Claudia"));
-        lista.add(new CambiarPedro("Samuel"));
-        lista.add(new CambiarPedro("Jeremahia"));
+        List<CambiarArrayli> lista = new ArrayList<CambiarArrayli>();
+        lista.add(new CambiarArrayli(17));
+        lista.add(new CambiarArrayli(23));
+        lista.add(new CambiarArrayli(13));
+        lista.add(new CambiarArrayli(56));
 
-        String nombreAInsertar = "Pedro";
-        lista.add(1, new CambiarPedro(nombreAInsertar));
-        
-        for (CambiarPedro persona : lista) {
-            System.out.println(persona.getNombre());
-        }
+        System.out.println("ArrayList original: " + numeros);
+
+        CambiarArrayli.clear();
+
+        System.out.println("ArrayList después de eliminar todos los elementos: " + numeros);
+    
     }
 }
 
-         
+
