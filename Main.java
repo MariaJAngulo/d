@@ -4,19 +4,21 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        List<CambiarArrayli> lista = new ArrayList<CambiarArrayli>();
-        lista.add(new CambiarArrayli(17));
-        lista.add(new CambiarArrayli(23));
-        lista.add(new CambiarArrayli(13));
-        lista.add(new CambiarArrayli(56));
+        List<UltimoArray> lista = new ArrayList<UltimoArray>();
+        lista.add(new UltimoArray(17));
+        lista.add(new UltimoArray(23));
+        lista.add(new UltimoArray(13));
+        lista.add(new UltimoArray(56));
 
-        System.out.println("ArrayList original: " + numeros);
-
-        CambiarArrayli.clear();
-
-        System.out.println("ArrayList después de eliminar todos los elementos: " + numeros);
-    
+        int tamaño = lista.size();
+        if (tamaño > 0) {
+            UltimoArray ultimoElemento = lista.get(tamaño - 1);
+            System.out.println("El último elemento es: " + ultimoElemento.getNumeros());
+        } else {
+            System.out.println("El ArrayList está vacío.");
+        }
     }
 }
+
 
 
